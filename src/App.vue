@@ -3,6 +3,9 @@ import { ref } from 'vue'
 import { ElContainer, ElHeader, ElMain, ElFooter } from 'element-plus'
 import WhisperList from './components/WhisperList.vue'
 import WhisperForm from './components/WhisperForm.vue'
+
+// 创建对WhisperList组件的引用
+const whisperListRef = ref(null)
 </script>
 
 <template>
@@ -12,8 +15,8 @@ import WhisperForm from './components/WhisperForm.vue'
     </el-header>
 
     <el-main>
-      <whisper-form />
-      <whisper-list />
+      <whisper-form :whisper-list-ref="whisperListRef" />
+      <whisper-list ref="whisperListRef" />
     </el-main>
 
     <el-footer class="app-footer">
