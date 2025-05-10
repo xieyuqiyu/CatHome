@@ -3,8 +3,8 @@ import axios from 'axios'
 // 创建axios实例
 const request = axios.create({
     //   baseURL: 'http://localhost:3001/api', //本地 基础URL
-    // baseURL: 'api.zqytime.cn/api', // 服务器 基础URL
-    baseURL: 'http://43.143.90.251:3001/api', // 服务器 基础URL
+    baseURL: 'https://api.zqytime.cn/api', // 服务器 基础URL
+    // baseURL: 'http://43.143.90.251:3001/api', // 服务器 基础URL
 
 
   timeout: 10000, // 请求超时时间

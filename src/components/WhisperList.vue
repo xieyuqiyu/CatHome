@@ -97,7 +97,7 @@ const fetchWhispers = async () => {
     }
   } catch (error) {
     console.error('获取数据失败:', error)
-    ElMessage.error('获取数据失败，请稍后重试')
+    ElMessage.error('获取数据失败，请稍后重试',)
     // 加载失败时使用模拟数据
     const mockData = [
       {
